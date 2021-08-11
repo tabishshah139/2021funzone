@@ -61,6 +61,15 @@ message.author.send(":one: Random Drop You Can See Detail About Account by visit
 
 */
 
+
+bot.on('message', message =>{
+    if(message.contenttoLowerCase() === 'hi')
+        message.channel.send('hey there' + message.author);
+   }
+});
+       
+        
+
 bot.on('message', message =>{
   if (message.content === '+statsupdate') {
    bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
