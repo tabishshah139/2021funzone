@@ -394,6 +394,7 @@ class MyClient(discord.Client):
             await message.channel.send(f"{message.author.mention} {reponse}")
 
 
-
+client = MyClient()
+client.run('ODc1MDYyODI1NDE5MTY5ODIy.YRQDww.p1cSYfreBuA9KtwAJiU55X7Pf0Q')
 
 bot.login(TOKEN);
