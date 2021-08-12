@@ -3,6 +3,22 @@
 const Discord = require ('discord.js');
 const bot = new Discord.Client();
 
+
+
+///CHAT THING
+import discord
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome()
+driver.get('https://www.cleverbot.com')
+driver.find_element_by_id('noteb').click()
+/////CHAT THING
+
+
+
+
+
 const TOKEN = process.env.TOKEN
 const usedCommandRecently4 = new Set();
 
@@ -351,6 +367,31 @@ bot.on('message', message =>{
 message.author.send("https://discord.com/api/oauth2/authorize?client_id=840616130947317780&permissions=8&scope=bot");
    }
 }); 
+
+
+
+
+
+
+def get_response(message):
+    driver.find_element_by_xpath('//*[@id="avatarform"]/input[1]').send_keys(message + Keys.RETURN)
+    while True:
+        try:
+            driver.find_element_by_xpath('//*[@id="snipTextIcon"]')
+            break
+        except:
+            continue
+    response = driver.find_element_by_xpath('//*[@id="line1"]/span[1]').text
+    return response
+
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print('Logged on as', self.user)
+
+    async def on_message(self, message):
+        if message.author != self.user:
+            reponse = get_response(message.content)
+            await message.channel.send(f"{message.author.mention} {reponse}")
 
 
 
