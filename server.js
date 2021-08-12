@@ -238,7 +238,7 @@ if (message.content === '+gen'){
 };
 });
 
-/*
+
 bot.on('message', message =>{
     if (!message.guild) return;
 if (message.content === '+origin'){
@@ -331,35 +331,6 @@ Account Info: denoqo21:rapperbela1`;
 
 
 
-bot.on('message', message =>{
-    if (!message.guild) return;
-if (message.content === '+nordvpn'){
-    if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 1 mintue before generating again``')
-    } else{
-        usedCommandRecently4.add(message.author.id);
-        setTimeout(() =>{
-            usedCommandRecently4.delete(message.author.id);
-        }, 60000)
-    var string = `kurtgadzikowski@unitybox.de:kuddel2672
-theoleblanc03@gmail.com:Tanglewood29`;
-   var words = string.split('\n');
-      let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99");
-     message.author.send({embed: {
-        color: 3447003,
-        description: `**NordVpn** \n \n ${random}`
-      }});
-      message.channel.send({embed: {
-        color: 3066993,
-        description: "NordVpn Account sent on **DMs**! :white_check_mark:"
-   }});
-    };
-    
-};
-});
-
-*/
 
 bot.on('message', message =>{
   if (message.content === '+invite') {
@@ -395,6 +366,6 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('ODc1MDYyODI1NDE5MTY5ODIy.YRQDww.p1cSYfreBuA9KtwAJiU55X7Pf0Q')
+
 
 bot.login(TOKEN);
