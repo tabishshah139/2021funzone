@@ -63,7 +63,7 @@ message.author.send(":one: Random Drop You Can See Detail About Account by visit
 
 
 bot.on('message', message =>{
-    if(message.contenttoLowerCase() === 'hi')
+    if(message.content === 'hi'){
         message.channel.send('hey there' + message.author);
    }
 });
