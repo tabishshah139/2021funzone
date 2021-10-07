@@ -35,6 +35,9 @@ bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
 bot.on('message', message =>{
     if(message.content == "hi" || message.content == "hello" || message.content == "hey"){
         message.channel.send('hey there please type !d bump' + message.author);
+        message.channel.send({embed: {
+        color: 3066993,
+        description: "Reward sent on **DMs**! :white_check_mark: Type !d bump"
    }
 });
        
