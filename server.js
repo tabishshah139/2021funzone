@@ -20,7 +20,7 @@ const PREFIX = '?';
 
 client.on('ready', () =>{
 console.log(`Titanium Gen is now online in ${client.guilds.size} servers with ${client.users.size} members!`);
-client.user.setStatus('dnd','afk','online');
+client.user.setStatus('dnd, online, idle');
 client.user.setActivity(`${client.guilds.cache.size} servers ${client.users.size} Users`);
 });
 
