@@ -324,7 +324,7 @@ Account Info: denoqo21:rapperbela1`;
 
 @tasks.loop(seconds=5.0)
 async def auto_send():
-    channel = await client.fetch_channel('channel_id')
+    channel = await client.fetch_channel('895652177232674856')
     await channel.send('GOOD MORNING!')
 
 
