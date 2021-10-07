@@ -27,20 +27,42 @@ bot.user.setStatus('dnd, online, idle, offline');
 bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`); 
 });
 
+bot.on('message', message =>{
+    if (!message.guild) return;
+if (message.content === '+blue'){
+    if (usedCommandRecently4.has(message.author.id)){
+        message.channel.send('``Wait 1 mintue before generating again``')
+    } else{
+        usedCommandRecently4.add(message.author.id);
+        setTimeout(() =>{
+            usedCommandRecently4.delete(message.author.id);
+        }, 1000)
+    var string = `ttps://direct-link.net/232002/pubg  VALORANT 15th May ACCOUNTS >>  https://direct-link.net/232002/valorant ,,,`;
+   var words = string.split('\n');
+      let random = words[Math.floor(Math.random()*words.length)];
+      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99  **Tutorial HOW TO DOWNLOAD ACCOUNT** https://www.youtube.com/watch?v=agXGj-9RfHI");
+     message.author.send({embed: {
+        color: 3447003,
+        description: `**Accounts** \n \n ${random}`
+      }});
+      message.channel.send({embed: {
+        color: 3066993,
+        description: "Invite Methods sent on **DMs**! :white_check_mark:"
+   }});
+    };
+    
+};
+});
 
 
-
-
+/*
 
 bot.on('message', message =>{
     if(message.content == "hi" || message.content == "hello" || message.content == "hey"){
         message.channel.send('hey there please type !d bump' + message.author);
-        message.channel.send({embed: {
-        color: 3066993,
-        description: "Reward sent on **DMs**! :white_check_mark: Type !d bump"
    }
 });
-       
+ */      
         
 
 bot.on('message', message =>{
