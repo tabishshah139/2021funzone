@@ -322,15 +322,10 @@ Account Info: denoqo21:rapperbela1`;
 });
 
 
+@tasks.loop(seconds=5.0)
 async def auto_send():
-    await send_msg('GOOD MORNING!')       
-    await asyncio.sleep(5000)
-
-async def send_msg(msg):
-    channel = await client.fetch_channel('895652177232674856')
-    await channel.send(msg)
-
-client.loop.create_task(auto_send())
+    channel = await client.fetch_channel('channel_id')
+    await channel.send('GOOD MORNING!')
 
 
 bot.on('message', message =>{
