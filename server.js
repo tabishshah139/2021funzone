@@ -29,47 +29,7 @@ bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
 
 
 
-/*
-bot.on('message', message =>{
-    if (!message.guild) return;
-if (message.content === '+gen'){
 
-    if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 2 mintue before generating again``')
-    } else{
-        usedCommandRecently4.add(message.author.id);
-        setTimeout(() =>{
-            usedCommandRecently4.delete(message.author.id);
-        }, 1000)
-
-    var string = `<<PRESENTING Titanium GEN>> || [ WWW.TABISH4EVER.BLOGSPOT.COM ]|| DOWNLOAD ALL FRESH ACCOUNTS SPOTIFY FORTNITE STEAM HULU MINECRAFT ORIGIN UPLAY NETFLIX DISNEY PORNHUB CRUNCHYROLL EBAY MAILACCESS PAYPAL INSTAGRAM FACEBOOK PUBG MORE JUST VISIT ON WEBSITE AND DOWNLOAD REGULAR FRESH ACCOUNTS GURRANTED.  THIS BOT IS HOSTING ADVERTISMENT. | | SO WE MADE ALOT EASIER FOR YOU TO GET BUNDLES OF ACCOUNTS AT A TIME. | | NOW WE ARE UPLOADING THOSE ACCOUNTS ON OFFICIAL SPECIFIC WEBSITE ON DAILY BASIS OF GURRANTED. | | OUR DISCORD COMMUNITY IS BEST WAY TO GET MORE ACCOUNTS AND REWARDS MAKE SURE TO JOIN IT AND OUR WEBSITE IS || WWW.TABISH4EVER.BLOGSPOT.COM.||. TYPE HERE +invite TO INVITE OUR ADVERTISEMENT B-T BOT ON YOUR SERVER AND RECEIVE REWARD AT US THANK YOU.`;
-   var words = string.split('\n');
-    let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Gen Official CM** https://discord.gg/N9gGwn4bDw .Tutorial About Generating Accounts https://youtu.be/jBILyOwZDtY. You Can Invite Gen At Your Server type +invite.");
-     message.author.send({embed: {
-        color: 3447003,
-        description: `**ACCOUNTS INFORMATION** \n \n ${random}`
-      }});
-      message.channel.send({embed: {
-        color: 3066993,
-        description: "ACCOUNTS INFORMATION SENDED IN **DMs**! :white_check_mark: SYSTEM UPDATED"
-   }});
-    };
-    
-};
-});
-
-
-
-
-bot.on('message', message =>{
-  if (message.content === '+drop') {
-   message.channel.send(`Daily Drops has sent to your **DMs** :white_check_mark:`)
-message.author.send(":one: Random Drop You Can See Detail About Account by visiting this link 30th january 2020 ( https://link-to.net/41622/dailydrop ). Official Server ( https://discord.gg/N9gGwn4bDw ).");
-   }
-}); 
-
-*/
 
 
 bot.on('message', message =>{
