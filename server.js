@@ -18,12 +18,17 @@ const PREFIX = '?';
 
 
 
-client.on('ready', () =>{
-console.log(`Titanium Gen is now online in ${client.guilds.size} servers with ${client.users.size} members!`);
-client.user.setStatus('dnd, online, idle');
-client.user.setActivity(`${client.guilds.cache.size} servers ${client.users.size} Users`);
-});
+client.on('ready', () => {
+        setInterval(() => {
+          targetGuild = client.guilds.get('GUILD ID HERE')
+          if(targetGuild) {
+              client.user.setPresence({ game: { name: targetGuild.memberCount + ' people verifying!', type: 'WATCHING' }, status: 'online'  })
+                    .then(console.log)
+                    .catch(console.error);
+          }
+    }, 1000 * 60 * 5);
 
+});
 
 
 
