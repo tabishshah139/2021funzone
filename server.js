@@ -17,12 +17,12 @@ const usedCommandRecently4 = new Set();
 const PREFIX = '?';
 
 
-client.on('ready', () => {
 
-client.user.setActivity('othertext' + client.guilds.cache.size, {type : 'PLAYING'})
+bot.on('ready', () =>{
+console.log(`Titanium Gen is now online in ${bot.guilds.size} servers with ${bot.users.size} members!`);
+bot.user.setStatus('offline');
+bot.user.setActivity(`${client.guilds.cache.size} servers ${bot.users.size} Users`);
 });
-
-
 
 
 
