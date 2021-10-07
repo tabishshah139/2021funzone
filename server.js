@@ -4,9 +4,8 @@ const Discord = require ('discord.js');
 const bot = new Discord.Client();
 
 
-import discord,random,asyncio
-from discord.ext import commands
-client = commands.Bot(command_prefix = '/')
+
+
 
 
 
