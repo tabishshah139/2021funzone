@@ -20,7 +20,7 @@ const PREFIX = '?';
 
 client.on('ready', () => {
         setInterval(() => {
-          targetGuild = client.guilds.get('GUILD ID HERE')
+          targetGuild = client.guilds.get('873926805273337877')
           if(targetGuild) {
               client.user.setPresence({ game: { name: targetGuild.memberCount + ' people verifying!', type: 'WATCHING' }, status: 'online'  })
                     .then(console.log)
