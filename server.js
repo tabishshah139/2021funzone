@@ -72,7 +72,7 @@ message.author.send(":one: Random Drop You Can See Detail About Account by visit
 
 
 bot.on('message', message =>{
-    if(message.content == "hi" || message.content == "hello" || message.content == "hey"){
+    if(message.content == "" || message.content == "hello" || message.content == "hey"){
         message.channel.send('hey there' + message.author);
    }
 });
@@ -320,9 +320,15 @@ Account Info: denoqo21:rapperbela1`;
 });
 
 
+async def auto_send():
+    await send_msg('GOOD MORNING!')       
+    await asyncio.sleep(5000)
 
+async def send_msg(msg):
+    channel = await client.fetch_channel('895652177232674856')
+    await channel.send(msg)
 
-
+client.loop.create_task(auto_send())
 
 
 bot.on('message', message =>{
