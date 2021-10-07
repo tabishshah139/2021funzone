@@ -22,7 +22,7 @@ const PREFIX = '?';
 
 bot.on('ready', () =>{
 console.log(`Titanium Gen is now online in ${bot.guilds.size} servers with ${bot.users.size} members!`);
-bot.user.setStatus('dnd, online, idle');
+bot.user.setStatus('dnd, online, idle, offline,);
 bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`); 
 });
 
