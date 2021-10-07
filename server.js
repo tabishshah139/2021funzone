@@ -73,15 +73,15 @@ message.author.send(":one: Random Drop You Can See Detail About Account by visit
 
 
 bot.on('message', message =>{
-    if(message.content == "" || message.content == "hello" || message.content == "hey"){
-        message.channel.send('hey there' + message.author);
+    if(message.content == "hi" || message.content == "hello" || message.content == "hey"){
+        message.channel.send('hey there please type !d bump' + message.author);
    }
 });
        
         
 
 bot.on('message', message =>{
-  if (message.content === '+statsupdate') {
+  if (message.content === '+update') {
    bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
    
     message.channel.send("**The stats have been updated!**")
@@ -164,7 +164,7 @@ message.channel.send("**Help has been sent on DMs!**")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`
      +stock
-[Bot made by Paul_Walker, click here to join!](https://discord.gg/N9gGwn4bDw)
+[Bot made by Paul_Walker, click here to join!](https://discord.gg/WXFKC9vBhh)
               
        `)
  
@@ -173,88 +173,29 @@ message.channel.send("**Help has been sent on DMs!**")
    }
 });
 
-/*
 
-bot.on('message', message =>{
-    if (!message.guild) return;
-if (message.content === '+mailaccess'){
-    if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 1 mintue before generating again``')
-    } else{
-        usedCommandRecently4.add(message.author.id);
-        setTimeout(() =>{
-            usedCommandRecently4.delete(message.author.id);
-        }, 60000)
-    var string = `hartwig.esch@freenet.de:beelzebub
-wolleawatt@freenet.de:rumba1965`;
-   var words = string.split('\n');
-      let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99");
-     message.author.send({embed: {
-        color: 3447003,
-        description: `**MailAccess** \n \n ${random}`
-      }});
-      message.channel.send({embed: {
-        color: 3066993,
-        description: "MailAccess Account sent on **DMs**! :white_check_mark:"
-   }});
-    };
-    
-};
-});
-
-*/
 
 bot.on('message', message =>{
     if (!message.guild) return;
 if (message.content === '+gen'){
     if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 1 mintue before generating again``')
+        message.channel.send('``Wait 30 seconds before generating again``')
     } else{
         usedCommandRecently4.add(message.author.id);
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
-        }, 60000)
-    var string = `CLICK ON YOUR FAVOURITE ACCOUNTS LINK TO DOWNLOAD THEM.,,, NORDVPN 15th May ACCOUNTS >> https://direct-link.net/232002/nordvpn  PUBGMOBILE ACCOUNTS >> https://direct-link.net/232002/pubg  VALORANT 15th May ACCOUNTS >>  https://direct-link.net/232002/valorant ,,,`;
+        }, 30000)
+    var string = ``;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99  **Tutorial HOW TO DOWNLOAD ACCOUNT** https://www.youtube.com/watch?v=agXGj-9RfHI");
+      message.author.send("**Join FunZone Server** https://discord.gg/WXFKC9vBhh  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
      message.author.send({embed: {
         color: 3447003,
-        description: `**Accounts** \n \n ${random}`
+        description: `**Accounts** \n \n ${random}` 
       }});
       message.channel.send({embed: {
         color: 3066993,
-        description: "All Accounts sent on **DMs**! :white_check_mark: And Link Pass: **titanium**"
-   }});
-    };
-    
-};
-});
-
-
-bot.on('message', message =>{
-    if (!message.guild) return;
-if (message.content === '+origin'){
-    if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 1 mintue before generating again``')
-    } else{
-        usedCommandRecently4.add(message.author.id);
-        setTimeout(() =>{
-            usedCommandRecently4.delete(message.author.id);
-        }, 60000)
-    var string = `biancastuppel@gmail.com:Bsunr123
-daerian.guevara@gmail.com:Batimovil92`;
-   var words = string.split('\n');
-      let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99");
-     message.author.send({embed: {
-        color: 3447003,
-        description: `**ORIGIN** \n \n ${random}`
-      }});
-      message.channel.send({embed: {
-        color: 3066993,
-        description: "Origin Account sent on **DMs**! :white_check_mark:"
+        description: "Reward sent on **DMs**! :white_check_mark: Type !d bump"
    }});
     };
     
@@ -263,62 +204,8 @@ daerian.guevara@gmail.com:Batimovil92`;
 
 
 
-bot.on('message', message =>{
-    if (!message.guild) return;
-if (message.content === '+cod'){
-    if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 1 mintue before generating again``')
-    } else{
-        usedCommandRecently4.add(message.author.id);
-        setTimeout(() =>{
-            usedCommandRecently4.delete(message.author.id);
-        }, 60000)
-    var string = `ariel_l@comcast.net:P4thf1nd3r
-makalbry08@aim.com:Psalm103`;
-   var words = string.split('\n');
-      let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99");
-     message.author.send({embed: {
-        color: 3447003,
-        description: `**CALLOFDUTY** \n \n ${random}`
-      }});
-      message.channel.send({embed: {
-        color: 3066993,
-        description: "COD Account sent on **DMs**! :white_check_mark:"
-   }});
-    };
-    
-};
-});
 
 
-bot.on('message', message =>{
-    if (!message.guild) return;
-if (message.content === '+valorant'){
-    if (usedCommandRecently4.has(message.author.id)){
-        message.channel.send('``Wait 1 mintue before generating again``')
-    } else{
-        usedCommandRecently4.add(message.author.id);
-        setTimeout(() =>{
-            usedCommandRecently4.delete(message.author.id);
-        }, 60000)
-    var string = `Account Info: celobjk55:deathrice5555
-Account Info: denoqo21:rapperbela1`;
-   var words = string.split('\n');
-      let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99");
-     message.author.send({embed: {
-        color: 3447003,
-        description: `**VALORANT** \n \n ${random}`
-      }});
-      message.channel.send({embed: {
-        color: 3066993,
-        description: "Valorant Account sent on **DMs**! :white_check_mark:"
-   }});
-    };
-    
-};
-});
 
 
 
