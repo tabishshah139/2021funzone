@@ -21,7 +21,7 @@ const PREFIX = '?';
 bot.on('ready', () =>{
 console.log(`Titanium Gen is now online in ${bot.guilds.size} servers with ${bot.users.size} members!`);
 bot.user.setStatus('offline');
-bot.user.setActivity(`${client.guilds.cache.size} servers ${bot.users.size} Users`);
+bot.user.setActivity(`${bot.guilds.cache.size} servers ${bot.users.size} Users`);
 });
 
 
