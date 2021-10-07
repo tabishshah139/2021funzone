@@ -18,18 +18,9 @@ const PREFIX = '?';
 
 
 client.on('ready', () => {
-//...
-client.user.setActivity('othertext' + client.guilds.cache.size, {type : 'PLAYING'})
-}
 
-client.on('guildCreate', guild => {
 client.user.setActivity('othertext' + client.guilds.cache.size, {type : 'PLAYING'})
-})
-
-client.on('guildDelete', guild => {
-client.user.setActivity('othertext' + client.guilds.cache.size, {type : 'PLAYING'})
-})
-
+});
 
 
 
