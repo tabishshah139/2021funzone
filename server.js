@@ -321,18 +321,10 @@ Account Info: denoqo21:rapperbela1`;
 });
 
 
-@tasks.loop(seconds=5.0)
-async def auto_send():
-    channel = await client.fetch_channel('895652177232674856')
-    await channel.send('GOOD MORNING!')
 
 
-bot.on('message', message =>{
-  if (message.content === '+invite') {
-   message.channel.send(`Invite link of Titanium Gen BOT has sent to your **DMs** :white_check_mark:`)
-message.author.send("https://discord.com/api/oauth2/authorize?client_id=840616130947317780&permissions=8&scope=bot");
-   }
-}); 
+
+
 
 
 
