@@ -25,7 +25,7 @@ if (message.content === '+invitemethods'){
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
         }, 5000)
-     var string = `🎊🎊🎊 Accounts Reward 🎊🎊🎊 \n1️⃣ 3x Random Steam Games Accounts 2️⃣ 3x Hulu Premium Accounts 3️⃣ 3x NordVpn Premium Accounts 4️⃣ 3x Valorant Accounts5️⃣ 3x Call Of Duty Accounts6️⃣ 3x Origin Random Games Accounts7️⃣ 1x Minecraft Nfa Account 8️⃣ 3x Lol (leagues of legends) Accounts 🎉🎉🎉Methods Reward🎉🎉🎉1️⃣ Nfa To Fa Steam Method 2️⃣ Nfa To Fa Epic Games Method 3️⃣ Nfa To Fa Uplay Method 4️⃣ Nfa To Fa Origin Method 5️⃣ Discord Free Nitro Emojis And 1080p Stream Method6️⃣ Discord Invisible Name And Invisible Pfp Method7️⃣ Discord Crash Someone Dms And Server Method`;
+     var string = `**🎊🎊🎊 Accounts Reward 🎊🎊🎊** \n1️⃣ 3x Random Steam Games Accounts \n2️⃣ 3x Hulu Premium Accounts \n3️⃣ 3x NordVpn Premium Accounts \n4️⃣ 3x Valorant Accounts \n5️⃣ 3x Call Of Duty Accounts \n6️⃣ 3x Origin Random Games Accounts \n7️⃣ 1x Minecraft Nfa Account \n8️⃣ 3x Lol (leagues of legends) Accounts \n**🎉🎉🎉Methods Reward🎉🎉🎉** \n1️⃣ Nfa To Fa Steam Method \n2️⃣ Nfa To Fa Epic Games Method \n3️⃣ Nfa To Fa Uplay Method \n4️⃣ Nfa To Fa Origin Method \n5️⃣ Discord Free Nitro Emojis And 1080p Stream Method \n6️⃣ Discord Invisible Name And Invisible Pfp Method \n7️⃣ Discord Crash Someone Dms And Server Method`;
 
         var words = string.split('**');
       let random = words[Math.floor(Math.random()*words.length)];
