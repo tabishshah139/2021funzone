@@ -32,7 +32,7 @@ if (message.content === "+invitemethods" || message.content == "+inviterewards" 
       message.author.send("**Join Fun Zone Server** https://discord.gg/WXFKC9vBhh  ");
      message.author.send({embed: {
         color: 3447003,
-        description: `**Invite Methods** \n \n ${random}`
+        description: `**Invite Basis Reward list** \n \n ${random}`
       }});
       message.channel.send({embed: {
         color: 3066993,
