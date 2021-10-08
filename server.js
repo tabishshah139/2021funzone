@@ -2,22 +2,10 @@
 
 const Discord = require ('discord.js');
 const bot = new Discord.Client();
-
-
-
-
-
-
-
-
-
-
 const TOKEN = process.env.TOKEN
 const usedCommandRecently4 = new Set();
 
 const PREFIX = '?';
-
-
 
 
 
@@ -29,7 +17,7 @@ bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
 
 bot.on('message', message =>{
     if (!message.guild) return;
-if (message.content === '+blue'){
+if (message.content === '+invitemethods'){
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('``Wait 1 mintue before generating again``')
     } else{
@@ -40,7 +28,7 @@ if (message.content === '+blue'){
     var string = `ttps://direct-link.net/232002/pubg  VALORANT 15th May ACCOUNTS >>  https://direct-link.net/232002/valorant ,,,`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Titanium Server** https://discord.gg/22CXbzku99  **Tutorial HOW TO DOWNLOAD ACCOUNT** https://www.youtube.com/watch?v=agXGj-9RfHI");
+      message.author.send("**Join Fun Zone Server** https://discord.gg/22CXbzku99  **Tutorial HOW TO DOWNLOAD ACCOUNT** https://www.youtube.com/watch?v=agXGj-9RfHI");
      message.author.send({embed: {
         color: 3447003,
         description: `**Accounts** \n \n ${random}`
@@ -152,7 +140,6 @@ message.channel.send("**Help has been sent on DMs!**")
 [Bot made by Paul_Walker, click here to join!](https://discord.gg/WXFKC9vBhh)
               
        `)
- 
    message.author.sendEmbed(embed)
    
    }
@@ -170,7 +157,7 @@ if (message.content === '+gen'){
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
         }, 30000)
-    var string = ``;
+    var string = `<<VALORANT REWARD https://up-to-down.net/232002/valorant>> | | <<STEAM REWARD https://up-to-down.net/232002/steam >> | | << ORIGIN REWARD https://up-to-down.net/232002/origin >> | | << NORDVPN REWARD https://up-to-down.net/232002/nordvpn >> | | << WISH REWARD https://direct-link.net/232002/wish >> | | << HULU REWARD https://up-to-down.net/232002/hulu >> | | << CALLOFDUTY REWARD https://up-to-down.net/232002/cod >>`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
       message.author.send("**Join FunZone Server** https://discord.gg/WXFKC9vBhh  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
@@ -186,23 +173,6 @@ if (message.content === '+gen'){
     
 };
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
