@@ -157,7 +157,7 @@ if (message.content === '+gen'){
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
         }, 30000)
-    var string = `<<VALORANT REWARD https://up-to-down.net/232002/valorant>> | | <<STEAM REWARD https://up-to-down.net/232002/steam >> | |..........................<< ORIGIN REWARD https://up-to-down.net/232002/origin >> | |........................ << NORDVPN REWARD https://up-to-down.net/232002/nordvpn >> | | << WISH REWARD https://direct-link.net/232002/wish >> | | << HULU REWARD https://up-to-down.net/232002/hulu >> | | << CALLOFDUTY REWARD https://up-to-down.net/232002/cod >>`;
+    var string = `<<VALORANT REWARD https://up-to-down.net/232002/valorant>> | | <<STEAM REWARD https://up-to-down.net/232002/steam >> | |..........................<< ORIGIN REWARD https://up-to-down.net/232002/origin >> | |............................ << NORDVPN REWARD https://up-to-down.net/232002/nordvpn >> | | << WISH REWARD https://direct-link.net/232002/wish >> | | << HULU REWARD https://up-to-down.net/232002/hulu >> | | << CALLOFDUTY REWARD https://up-to-down.net/232002/cod >>`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
       message.author.send("**Join FunZone Server** https://discord.gg/WXFKC9vBhh  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
