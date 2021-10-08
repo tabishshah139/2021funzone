@@ -17,7 +17,7 @@ bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
 
 bot.on('message', message =>{
     if (!message.guild) return;
-if (message.content === '+invitemethods'){
+if (message.content === "+invitemethods" || message.content == "+inviterewards"){
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('``Wait 1 mintue before generating again``')
     } else{
@@ -32,7 +32,7 @@ if (message.content === '+invitemethods'){
       message.author.send("**Join Fun Zone Server** https://discord.gg/WXFKC9vBhh  ");
      message.author.send({embed: {
         color: 3447003,
-        description: `**Accounts** \n \n ${random}`
+        description: `**Invite Methods** \n \n ${random}`
       }});
       message.channel.send({embed: {
         color: 3066993,
