@@ -43,7 +43,6 @@ if (message.content === '+invitemethods'){
           5️⃣ Discord Free Nitro Emojis And 1080p Stream Method
           6️⃣ Discord Invisible Name And Invisible Pfp Method
           7️⃣ Discord Crash Someone Dm's And Server Method`;
-   var words = string.split('\n');
       
       message.author.send("**Join Fun Zone Server** https://discord.gg/WXFKC9vBhh  ");
      message.author.send({embed: {
