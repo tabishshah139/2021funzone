@@ -25,7 +25,7 @@ if (message.content === '+invitemethods'){
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
         }, 5000)
-    var string = `🎊🎊🎊 Accounts Reward 🎊🎊🎊
+    message.author.send(🎊🎊🎊 Accounts Reward 🎊🎊🎊
           1️⃣ 3x Random Steam Games Accounts 
           2️⃣ 3x Hulu Premium Accounts 
           3️⃣ 3x NordVpn Premium Accounts 
@@ -42,7 +42,7 @@ if (message.content === '+invitemethods'){
           4️⃣ Nfa To Fa Origin Method 
           5️⃣ Discord Free Nitro Emojis And 1080p Stream Method
           6️⃣ Discord Invisible Name And Invisible Pfp Method
-          7️⃣ Discord Crash Someone Dm's And Server Method`;
+          7️⃣ Discord Crash Someone Dms And Server Method");
       
       message.author.send("**Join Fun Zone Server** https://discord.gg/WXFKC9vBhh  ");
      message.author.send({embed: {
