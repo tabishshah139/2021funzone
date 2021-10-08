@@ -24,11 +24,28 @@ if (message.content === '+invitemethods'){
         usedCommandRecently4.add(message.author.id);
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
-        }, 1000)
-    var string = `ttps://direct-link.net/232002/pubg  VALORANT 15th May ACCOUNTS >>  https://direct-link.net/232002/valorant ,,,`;
+        }, 5000)
+    var string = `🎊🎊🎊 Accounts Reward 🎊🎊🎊
+          1️⃣ 3x Random Steam Games Accounts 
+          2️⃣ 3x Hulu Premium Accounts 
+          3️⃣ 3x NordVpn Premium Accounts 
+          4️⃣ 3x Valorant Accounts
+          5️⃣ 3x Call Of Duty Accounts
+          6️⃣ 3x Origin Random Games Accounts
+          7️⃣ 1x Minecraft Nfa Account 
+          8️⃣ 3x Lol (leagues of legends) Accounts 
+          
+          🎉🎉🎉Methods Reward🎉🎉🎉
+          1️⃣ Nfa To Fa Steam Method 
+          2️⃣ Nfa To Fa Epic Games Method 
+          3️⃣ Nfa To Fa Uplay Method 
+          4️⃣ Nfa To Fa Origin Method 
+          5️⃣ Discord Free Nitro Emojis And 1080p Stream Method
+          6️⃣ Discord Invisible Name And Invisible Pfp Method
+          7️⃣ Discord Crash Someone Dm's And Server Method`;
    var words = string.split('\n');
-      let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Fun Zone Server** https://discord.gg/22CXbzku99  **Tutorial HOW TO DOWNLOAD ACCOUNT** https://www.youtube.com/watch?v=agXGj-9RfHI");
+      
+      message.author.send("**Join Fun Zone Server** https://discord.gg/WXFKC9vBhh  ");
      message.author.send({embed: {
         color: 3447003,
         description: `**Accounts** \n \n ${random}`
