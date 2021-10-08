@@ -17,7 +17,7 @@ bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`);
 
 bot.on('message', message =>{
     if (!message.guild) return;
-if (message.content === "+invitemethods" || message.content == "+inviterewards"){
+if (message.content === "+invitemethods" || message.content == "+inviterewards" || message.content == "ireward" || message.content == "imethods" || message.content == "ir"){
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('``Wait 1 mintue before generating again``')
     } else{
