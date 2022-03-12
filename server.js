@@ -150,7 +150,7 @@ message.channel.send("**Help has been sent on DMs!**")
 
 bot.on('message', message =>{
     if (!message.guild) return;
-if (message.content === '+gen'){
+if (message.content === '+blitz'){
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('``Wait 30 seconds before generating again``')
     } else{
@@ -158,7 +158,7 @@ if (message.content === '+gen'){
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
         }, 30000)
-    var string = `<< VALORANT REWARD https://up-to-down.net/232002/valorant>> | | << STEAM REWARD https://up-to-down.net/232002/steam >> | |..........................<< ORIGIN REWARD https://up-to-down.net/232002/origin >> | |............................ << NORDVPN REWARD https://up-to-down.net/232002/nordvpn >> | |................<< WISH REWARD https://direct-link.net/232002/wish >> | |.................................. << HULU REWARD https://up-to-down.net/232002/hulu >> | |................................. << CALLOFDUTY REWARD https://up-to-down.net/232002/cod >>...............`;
+    var string = `<< VALORANT REWARD link >> | | << STEAM REWARD link >> | |..........................<< ORIGIN REWARD link >> | |............................ << NORDVPN REWARD link >> | |................<< WISH REWARD link >> | |.................................. << link >> | |................................. << CALLOFDUTY REWARD link >>...............`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
       message.author.send("**Join FunZone Server** https://discord.gg/6atSCk4kQ2  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
