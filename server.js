@@ -10,7 +10,7 @@ const PREFIX = '?';
 
 
 bot.on('ready', () =>{
-console.log(`Titanium Gen is now online in ${bot.guilds.size} servers with ${bot.users.size} members!`);
+console.log(`Titanium Blitz is now online in ${bot.guilds.size} servers with ${bot.users.size} members!`);
 bot.user.setStatus('dnd, online, idle, offline');
 bot.user.setActivity(`${bot.guilds.size} servers ${bot.users.size} Users`); 
 });
@@ -29,7 +29,7 @@ if (message.content === "+invitemethods" || message.content == "+inviterewards" 
 
         var words = string.split('**');
       let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Fun Zone Server** https://discord.gg/WXFKC9vBhh  ");
+      message.author.send("**Join Fun Zone Server** https://discord.gg/6atSCk4kQ2  ");
      message.author.send({embed: {
         color: 3447003,
         description: `**Invite Basis Reward list** \n \n ${random}`
@@ -138,7 +138,7 @@ message.channel.send("**Help has been sent on DMs!**")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`
      +stock
-[Bot made by Paul_Walker, click here to join!](https://discord.gg/WXFKC9vBhh)
+[Bot made by Tabish Shah, click here to join!](https://discord.gg/6atSCk4kQ2)
               
        `)
    message.author.sendEmbed(embed)
@@ -161,7 +161,7 @@ if (message.content === '+gen'){
     var string = `<< VALORANT REWARD https://up-to-down.net/232002/valorant>> | | << STEAM REWARD https://up-to-down.net/232002/steam >> | |..........................<< ORIGIN REWARD https://up-to-down.net/232002/origin >> | |............................ << NORDVPN REWARD https://up-to-down.net/232002/nordvpn >> | |................<< WISH REWARD https://direct-link.net/232002/wish >> | |.................................. << HULU REWARD https://up-to-down.net/232002/hulu >> | |................................. << CALLOFDUTY REWARD https://up-to-down.net/232002/cod >>...............`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join FunZone Server** https://discord.gg/WXFKC9vBhh  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
+      message.author.send("**Join FunZone Server** https://discord.gg/6atSCk4kQ2  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
      message.author.send({embed: {
         color: 3447003,
         description: `**Accounts** \n \n ${random}` 
