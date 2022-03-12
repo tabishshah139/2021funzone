@@ -158,7 +158,7 @@ if (message.content === '+blitz'){
         setTimeout(() =>{
             usedCommandRecently4.delete(message.author.id);
         }, 30000)
-    var string = `<< VALORANT REWARD link >> | | << STEAM REWARD link >> | |..........................<< ORIGIN REWARD link >> | |............................ << NORDVPN REWARD link >> | |................<< WISH REWARD link >> | |.................................. << link >> | |................................. << CALLOFDUTY REWARD link >>...............`;
+    var string = `<< CRUNCHYROLL REWARD https://ghostbin.com/RC6be >> | | << STEAM REWARD https://ghostbin.com/gV7HZ >> | |..........................<< LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R >> | |............................ << VALORANT REWARD https://ghostbin.com/vyADs >> | |................<< MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ >> | |.................................. << ORIGIN REWARD https://ghostbin.com/6hE0y >> | |................................. << ROBLOX REWARD https://ghostbin.com/3GRwe >>...............`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
       message.author.send("**Join FunZone Server** https://discord.gg/6atSCk4kQ2  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
