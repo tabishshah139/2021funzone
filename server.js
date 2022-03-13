@@ -148,6 +148,9 @@ message.channel.send("**Help has been sent on DMs!**")
 
 
 
+
+
+
 bot.on('message', message =>{
     if (!message.guild) return;
 if (message.content === "+blitz" || message.content == "+titanium" || message.content == "+TITANIUM") {
@@ -161,7 +164,7 @@ if (message.content === "+blitz" || message.content == "+titanium" || message.co
         
    var string = `\n🎊🎊🎊 Account Reward 🎊🎊🎊 \n1️⃣ CRUNCHYROLL REWARD https://ghostbin.com/RC6be \n2️⃣ STEAM REWARD https://ghostbin.com/gV7HZ \n3️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n4️⃣ VALORANT REWARD https://ghostbin.com/vyADs \n5️⃣ LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R \n6️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n7️⃣ ORIGIN REWARD https://ghostbin.com/6hE0y \n8️⃣ ROBLOX REWARD https://ghostbin.com/3GRwe \n9️⃣ NORDVPN REWARD https://ghostbin.com/OdhDh`;    
     /*var string = `<< CRUNCHYROLL REWARD https://ghostbin.com/RC6be >> .................................<< STEAM REWARD https://ghostbin.com/gV7HZ >> ................................................. << LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R >> ...................... << VALORANT REWARD https://ghostbin.com/vyADs >> .......................................... << MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ >> ........................... << ORIGIN REWARD https://ghostbin.com/6hE0y >> ........................................... << ROBLOX REWARD https://ghostbin.com/3GRwe >>...............`;*/
-   var words = string.split('\n');
+   var words = string.split('**');
       let random = words[Math.floor(Math.random()*words.length)];
       message.author.send("**Join TITANIUM BLITZ Server** https://discord.gg/6atSCk4kQ2");
      message.author.send({embed: {
