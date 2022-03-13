@@ -146,7 +146,6 @@ message.channel.send("**Help has been sent on DMs!**")
    }
 });
 
-var string = `\n🎊🎊🎊 Account Reward 🎊🎊🎊 \n1️⃣ CRUNCHYROLL REWARD https://ghostbin.com/RC6be \n2️⃣ STEAM REWARD https://ghostbin.com/gV7HZ \n3️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n4️⃣ VALORANT REWARD https://ghostbin.com/vyADs \n5️⃣ LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R \n6️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n7️⃣ ORIGIN REWARD https://ghostbin.com/6hE0y \n8️⃣ ROBLOX REWARD https://ghostbin.com/3GRwe \9️⃣ NORDVPN REWARD https://ghostbin.com/OdhDh`;
 
 
 bot.on('message', message =>{
