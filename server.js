@@ -150,7 +150,7 @@ message.channel.send("**Help has been sent on DMs!**")
 
 bot.on('message', message =>{
     if (!message.guild) return;
-if (message.content == "+blitz" || message.content == "+titanium" || message.content == "+TITANIUM") {
+if (message.content === "+blitz" || message.content == "+titanium" || message.content == "+TITANIUM") {
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('``Wait 30 seconds before generating again``')
     } else{
@@ -159,7 +159,7 @@ if (message.content == "+blitz" || message.content == "+titanium" || message.con
             usedCommandRecently4.delete(message.author.id);
         }, 30000)
         
-   var string = `\n🎊🎊🎊 Account Reward 🎊🎊🎊 \n1️⃣ CRUNCHYROLL REWARD https://ghostbin.com/RC6be \n2️⃣ STEAM REWARD https://ghostbin.com/gV7HZ \n3️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n4️⃣ VALORANT REWARD https://ghostbin.com/vyADs \n5️⃣ LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R \n6️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n7️⃣ ORIGIN REWARD https://ghostbin.com/6hE0y \n8️⃣ ROBLOX REWARD https://ghostbin.com/3GRwe \9️⃣ NORDVPN REWARD https://ghostbin.com/OdhDh`;    
+   var string = `\n🎊🎊🎊 Account Reward 🎊🎊🎊 \n1️⃣ CRUNCHYROLL REWARD https://ghostbin.com/RC6be \n2️⃣ STEAM REWARD https://ghostbin.com/gV7HZ \n3️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n4️⃣ VALORANT REWARD https://ghostbin.com/vyADs \n5️⃣ LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R \n6️⃣ MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ \n7️⃣ ORIGIN REWARD https://ghostbin.com/6hE0y \n8️⃣ ROBLOX REWARD https://ghostbin.com/3GRwe \n9️⃣ NORDVPN REWARD https://ghostbin.com/OdhDh`;    
     /*var string = `<< CRUNCHYROLL REWARD https://ghostbin.com/RC6be >> .................................<< STEAM REWARD https://ghostbin.com/gV7HZ >> ................................................. << LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R >> ...................... << VALORANT REWARD https://ghostbin.com/vyADs >> .......................................... << MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ >> ........................... << ORIGIN REWARD https://ghostbin.com/6hE0y >> ........................................... << ROBLOX REWARD https://ghostbin.com/3GRwe >>...............`;*/
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
