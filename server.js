@@ -29,7 +29,7 @@ if (message.content === "+invitemethods" || message.content == "+inviterewards" 
 
         var words = string.split('**');
       let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join Fun Zone Server** https://discord.gg/6atSCk4kQ2  ");
+      message.author.send("**Join Titanium Blitz Server** https://discord.gg/6atSCk4kQ2  ");
      message.author.send({embed: {
         color: 3447003,
         description: `**Invite Basis Reward list** \n \n ${random}`
@@ -138,7 +138,7 @@ message.channel.send("**Help has been sent on DMs!**")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`
      +stock
-[Bot made by Tabish Shah, click here to join!](https://discord.gg/6atSCk4kQ2)
+[Bot made by Tabish, click here to join!](https://discord.gg/6atSCk4kQ2)
               
        `)
    message.author.sendEmbed(embed)
@@ -150,7 +150,7 @@ message.channel.send("**Help has been sent on DMs!**")
 
 bot.on('message', message =>{
     if (!message.guild) return;
-if (message.content === '+blitz'){
+if (message.content == "+blitz" || message.content == "+titanium" || message.content == "+TITANIUM") {
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('``Wait 30 seconds before generating again``')
     } else{
@@ -161,7 +161,7 @@ if (message.content === '+blitz'){
     var string = `<< CRUNCHYROLL REWARD https://ghostbin.com/RC6be >> | | << STEAM REWARD https://ghostbin.com/gV7HZ >> | |..........................<< LEAGUES OF LEGENDS REWARD https://ghostbin.com/ve99R >> | |............................ << VALORANT REWARD https://ghostbin.com/vyADs >> | |................<< MINECRAFT NFA REWARD https://ghostbin.com/QB2MQ >> | |.................................. << ORIGIN REWARD https://ghostbin.com/6hE0y >> | |................................. << ROBLOX REWARD https://ghostbin.com/3GRwe >>...............`;
    var words = string.split('\n');
       let random = words[Math.floor(Math.random()*words.length)];
-      message.author.send("**Join FunZone Server** https://discord.gg/6atSCk4kQ2  **Tutorial HOW TO SKIP ADS** https://www.youtube.com/watch?v=agXGj-9RfHI");
+      message.author.send("**Join TITANIUM BLITZ Server** https://discord.gg/6atSCk4kQ2");
      message.author.send({embed: {
         color: 3447003,
         description: `**Accounts** \n \n ${random}` 
